@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { NextFunction, Response } from 'express';
-import { ExpressRequestInterface } from 'src/types/expressRequest.interface';
+import { ExpressRequestInterface } from 'src/user/types/expressRequest.interface';
 import { verify } from 'jsonwebtoken';
 import { JWT_SECRET } from 'src/config';
 import { UserService } from 'src/user/user.service';

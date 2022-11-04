@@ -9,13 +9,13 @@ import {
   UsePipes,
 } from '@nestjs/common';
 import { User } from 'src/decorators/user.decorater';
-import { createUserDTO } from 'src/dto/createUser.dto';
-import { updateUserDTO } from 'src/dto/update.user.dto';
-import { UserLoginDTO } from 'src/dto/userLogin.dto';
+import { createUserDTO } from 'src/user/dto/createUser.dto';
+import { updateUserDTO } from 'src/user/dto/update.user.dto';
+import { UserLoginDTO } from 'src/user/dto/userLogin.dto';
 import { AuthGuard } from 'src/guards/auth.guards';
 import { BackendValidationPipe } from 'src/shared/pipes/backendValidation.pipe';
-import { ExpressRequestInterface } from 'src/types/expressRequest.interface';
-import { UserResonseInterface } from 'src/types/userResponse.interface';
+import { ExpressRequestInterface } from 'src/user/types/expressRequest.interface';
+import { UserResonseInterface } from 'src/user/types/userResponse.interface';
 import { UserEntity } from './user.entity';
 import { UserService } from './user.service';
 

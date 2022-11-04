@@ -1,14 +1,14 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { createUserDTO } from 'src/dto/createUser.dto';
+import { createUserDTO } from 'src/user/dto/createUser.dto';
 import { Repository } from 'typeorm';
 import { UserEntity } from './user.entity';
 import { sign } from 'jsonwebtoken';
 import { JWT_SECRET } from 'src/config';
-import { UserResonseInterface } from 'src/types/userResponse.interface';
-import { UserLoginDTO } from 'src/dto/userLogin.dto';
+import { UserResonseInterface } from 'src/user/types/userResponse.interface';
+import { UserLoginDTO } from 'src/user/dto/userLogin.dto';
 import { compare } from 'bcrypt';
-import { updateUserDTO } from 'src/dto/update.user.dto';
+import { updateUserDTO } from 'src/user/dto/update.user.dto';
 
 @Injectable()
 export class UserService {
